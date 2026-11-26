@@ -85,7 +85,7 @@ function build(n){
   doc.setProperties({title:n,subject:'دعوة خاصة — حفل تكريم الكابتن صالح العريض'});
   doc.addImage(url,'JPEG',0,0,540,960,undefined,'FAST');
   // QR + «لتأكيد حضوركم» area (2160px image = 540pt, 4px per pt)
-  doc.link(40,715,135,125,{url:RSVP});
+  doc.link(40,723,135,125,{url:RSVP});
   const blob=doc.output('blob');
   const fn=fileName(n);
   cache={name:n,file:new File([blob],fn,{type:'application/pdf'})};
